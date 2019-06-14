@@ -5,9 +5,8 @@ class Profile extends Component{
     render(){
         const {image, title, link} = this.props.profile;
         return(
-            <div style={{display:'inline-block',width:330, margin: 10}}>
-                <img src={image} style={{width:40, height:40}} alt='profile'></img><br></br>
-                <a href={link} style={{color:'grey'}}><strong>{title}</strong></a>
+            <div style={{display:'inline-block', margin: 10}}>
+                <a href={link} style={{color:'grey'}}><img src={image} style={{width:40, height:40}} alt='profile'></img></a>
             </div>
         )
     }

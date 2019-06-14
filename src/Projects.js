@@ -8,7 +8,7 @@ class Project extends Component{
             <div style={{display:'inline-block', width:300, margin:10}}>
                 <h3>{title}</h3>
                 <img src={image} style={{width:200,height:200}} alt='project'></img>
-                <p>{description}</p>
+                <p style={{height:90}}>{description}</p>
                 <a href={link}>{link}</a>
             </div>
         )
