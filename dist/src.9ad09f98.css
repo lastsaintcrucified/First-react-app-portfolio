@@ -1,12 +1,12 @@
 @font-face{
     font-family: RobotoCondensed;
     font-weight:800;
-    src: url(roboto-condensed.light.6709adf4.ttf)
+    src: url(/roboto-condensed.light.6709adf4.ttf)
 }
 @font-face{
     font-family: EconomicaBold;
     font-weight:800;
-    src: url(economica-bold.12a9e27d.ttf)
+    src: url(/economica-bold.12a9e27d.ttf)
 }
 body{
     text-align: center;
@@ -22,3 +22,23 @@ h1,h2,h3,h4{
     height:200px;
     border-radius: 50%
 }
+.title-fade-in{
+    opacity:100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+@keyframes fade-in{
+    from{opacity:0}
+    to{opacity:100}
+}
+.title-fade-out{
+    opacity:0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+@keyframes fade-out{
+    from{opacity:100}
+    to{opacity:0}
+}
+
+/*# sourceMappingURL=/src.9ad09f98.css.map */

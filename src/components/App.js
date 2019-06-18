@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import Profiles from './Socials';
-import profilePic from './assets/profile.png';
+import profilePic from '../assets/profile.png';
+import Title from './Title';
+import Jokes from './Jokes';
 
 class App extends Component {
     state = { displayBio : false };
@@ -16,7 +18,8 @@ class App extends Component {
                 <h1>Hello!</h1>
                 <p>My name is <strong>MUHAMMAD TOWHIDUL ISLAM</strong></p>
                 <p>My favourite language is javaScript</p>
-                <p>I live in bangladesh</p>
+                <Title/>
+                <p>I believe in success.</p>
                 {
                     this.state.displayBio ? (
                         <div>
@@ -39,5 +42,6 @@ class App extends Component {
         )
     }
 }
+
 
 export default App;
